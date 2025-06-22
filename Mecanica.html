@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mecánica</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #3a3d47;
+      font-family: Verdana;
+    }
+    .container {
+      width: 1200px;
+      margin: 10px auto;
+      background: white;
+    }
+    .superior {
+      background: #1551a1;
+      overflow: hidden;
+    }
+    .logo {
+      float: left;
+      width: 300px;
+      padding: 35px;
+    }
+    .menu {
+      float: right;
+      padding: 50px;
+    }
+    .opciones li {
+      float: left;
+      list-style: none;
+    }
+    .opciones li a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 25px;
+    }
+    .opciones li a:hover {
+      background: #334155;
+    }
+    .slider img {
+      width: 100%;
+    }
+    .titulo {
+      text-align: center;
+      padding: 20px 0 15px 0;
+      color: #f97316;
+      font-size: 35px;
+    }
+
+    .cuerpo {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px 40px;
+      gap: 15px;
+    }
+
+    .caja {
+      width: 31%;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .subtitulo {
+      background: #1e293b;
+      position: relative;
+      text-align: center;
+    }
+
+    .subtitulo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .subtitulo .overlay-text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #0f172a;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+      text-align: left;
+      max-width: 80%;
+    }
+
+    .servicios {
+      text-align: center;
+      color: white;
+      padding: 15px 0;
+      background-color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    .contenido {
+      padding: 15px;
+      text-align: justify;
+      font-size: 14px;
+    }
+
+    .boton {
+      padding: 15px 20px;
+      margin: 20px auto;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+    }
+
+    .boton:hover {
+      background: #1e293b;
+    }
+
+    .pie {
+      background: #2596be;
+      overflow: hidden;
+      color: white;
+    }
+
+    .izquierda {
+      float: left;
+      width: 300px;
+      padding: 20px;
+    }
+
+    .derecha {
+      float: left;
+      width: 550px;
+      padding: 20px;
+    }
+
+    .abajo {
+      color: white;
+      font-size: 11px;
+      padding-top: 12px;
+    }
+
+    .siguenos {
+      text-align: center;
+      color: white;
+      padding: 15px 0;
+    }
+
+    .derecha img {
+      width: 40px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="superior">
+      <div class="logo">
+        <img src="imagenes/logo-blanco.png" alt="Logo">
+      </div>
+      <div class="menu">
+        <ul class="opciones">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider">
+      <img src="imagenes/slider01.jpg" alt="Slider">
+    </div>
+
+    <h1 class="titulo">Bienvenidos a tu mecánica de confianza</h1>
+    <div class="cuerpo">
+      <div class="caja">
+        <div class="subtitulo">
+          <img src="imagenes/servicio01.jpg" class="efecto" alt="Servicio 1">
+        </div>
+        <h3 class="servicios">SERVICIO 01</h3>
+        <div class="contenido">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non eveniet, est, et modi laboriosam totam accusantium.</p>
+        </div>
+        <input type="button" value="ACCEDER" class="boton">
+      </div>
+
+      <div class="caja">
+        <div class="subtitulo">
+          <img src="imagenes/servicio02.jpg" class="efecto" alt="Servicio 2">
+        </div>
+        <h3 class="servicios">SERVICIO 02</h3>
+        <div class="contenido">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Repellat voluptates autem laudantium dolores veniam totam aperiam.</p>
+        </div>
+        <input type="button" value="ACCEDER" class="boton">
+      </div>
+
+      <div class="caja">
+        <div class="subtitulo">
+          <img src="imagenes/servicio03.jpg" class="efecto" alt="Servicio 3">
+        </div>
+        <h3 class="servicios">SERVICIO 03</h3>
+        <div class="contenido">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia, consequatur, deserunt!</p>
+        </div>
+        <input type="button" value="ACCEDER" class="boton">
+      </div>
+    </div>
+
+<div class="pie" style="background:#1e293b; color:white; display: flex; justify-content: space-between; padding: 20px; min-height: 120px;">
+  <div class="izquierda" style="width: 300px; display: flex; flex-direction: column; justify-content: flex-start;">
+    <img src="imagenes/logo-blanco.png" alt="Logo" style="margin-bottom: 8px;">
+    <p class="abajo" style="font-size: 11px; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non eveniet, est, et modi laboriosam totam accusantium.</p>
+  </div>
+  <div class="derecha" style="width: 550px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; color: white;">
+<a href="../index.html" style="display: block; margin: 20px;">
+</a>
+  <h3 style="margin: 0 0 10px 0; font-size: 20px; font-weight: bold;">Síguenos en:</h3>
+  <div>
+    <img src="imagenes/instagram.png" alt="Instagram" style="width:40px; margin: 0 5px;">
+    <img src="imagenes/behance.png" alt="Behance" style="width:40px; margin: 0 5px;">
+    <img src="imagenes/twitter.png" alt="Twitter" style="width:40px; margin: 0 5px;">
+    <img src="imagenes/youtube.png" alt="YouTube" style="width:40px; margin: 0 5px;">
+  </div>
+</div>
+</div>
+</body>
+</html>
